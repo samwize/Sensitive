@@ -119,8 +119,8 @@ public final class Gesture<Recognizer: UIGestureRecognizer>: NSObject, UIGesture
 
 public extension Gesture {
     
-    public typealias Handler = (_ recognizer: Recognizer) -> Void
+    typealias Handler = (_ recognizer: Recognizer) -> Void
     
-    public typealias Configurator = (_ recognizer: Recognizer) -> Void
+    typealias Configurator = (_ recognizer: Recognizer) -> Void
     
 }

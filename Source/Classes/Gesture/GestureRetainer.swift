@@ -42,7 +42,7 @@ internal class GestureRetainer {
     }
     
     public func free(_ gesture: NSObject) {
-        guard let gestureIndex = self.gestures.index(of: gesture) else {
+        guard let gestureIndex = self.gestures.firstIndex(of: gesture) else {
             return
         }
         
